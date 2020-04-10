@@ -29,9 +29,6 @@ a, a:visited {
 .container {
   max-width: 1335px; }
 
-.navbar-toggler-icon {
-  background: red; }
-
 .navbar-brand .logo {
   width: 127px;
   height: 60px;
@@ -56,6 +53,21 @@ a, a:visited {
     padding: .5rem 2rem; }
     .navbar .nav-link a.active {
       border-bottom: 1px solid red; }
+
+#profileMenu {
+  background: #e4e7eb;
+  width: 100%;
+  border-radius: 0;
+  padding: 0;
+  margin-top: 13px; }
+  #profileMenu a {
+    display: block;
+    padding: 15px 0;
+    padding-right: 60px;
+    text-align: right; }
+    #profileMenu a:hover {
+      background-color: rgba(0, 0, 0, 0.85);
+      color: white; }
 
 .navbar-expand-lg .navbar-nav .nav-link {
   padding-right: 1.5rem;
@@ -306,4 +318,42 @@ footer {
     color: #00b2ff;
     width: 400px; }
 
-/*# sourceMappingURL=style.css.map */
+object {
+  height: 1px;
+  width: 1px;
+  opacity: 0.01; }
+
+@media (max-width: 991px) {
+  #categories .card, #instructors .card, #classes .card {
+    height: 186px;
+    padding: 80px 20px; }
+
+  #classes .card {
+    color: white;
+    padding: 20px 20px;
+    border: none; }
+
+  #navbarCollapse {
+    background-color: #e4e7eb;
+    margin: 10px -16px -8px -16px; }
+    #navbarCollapse .navbar-nav {
+      text-align: right; }
+      #navbarCollapse .navbar-nav .active {
+        background-color: rgba(0, 0, 0, 0.85);
+        color: white; }
+
+  #subNav {
+    width: 100%; }
+
+  .scrolling-wrapper-flexbox {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto; }
+    .scrolling-wrapper-flexbox .nav-link {
+      flex: 0 0 auto; } }
+@media (max-width: 767px) {
+  .day {
+    display: block; }
+
+  footer .copyright {
+    width: 100%; } }
