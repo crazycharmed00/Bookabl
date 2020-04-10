@@ -1,0 +1,331 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;600;900&display=swap');
+
+html{
+	background:  #101f2d;
+}
+
+body{
+	font-family: 'Nunito', sans-serif;
+	background-color: #e4e7eb;
+	color: rgba(0, 0, 0, 0.85);	
+
+}
+
+a, a:visited{
+	color: rgba(0, 0, 0, 0.85);
+}
+
+.headline{
+	font-size: 24px;	
+}
+
+.heading{
+	font-size: 14px;
+	text-transform: uppercase;
+}
+
+.bold{font-weight: bold;}
+.caps{text-transform: uppercase;}
+.success-text{color:#66b512;}
+
+.container{
+	max-width: 1335px;
+}
+
+.navbar-toggler-icon{
+	background:red;
+}
+
+.navbar-brand{
+	.logo{
+		  width: 127px;
+		  height: 60px;
+		  margin-top: -10px;
+		  margin-bottom: -10px;
+		  font-weight: bold;
+		  padding-top: 15px;
+		  font-size: 12px;
+		  font-weight: 600;
+		  color: rgba(0, 0, 0, 0.85);
+		  padding-left: 70px;
+		  background: url(assets/logo.jpg) no-repeat top left;
+		  background-size: 60px 56px;
+	}
+}
+
+.navbar{
+	border-bottom: 1px solid #979797;
+	.nav-link{
+		font-size: 16px;
+		font-weight: bold;
+		color: rgba(0, 0, 0, 0.85);
+		text-transform: uppercase;
+		padding: .5rem 2rem;
+		a.active{
+			border-bottom: 1px solid red;
+		}
+	}
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+	padding-right: 1.5rem;
+	padding-left: 1.5rem;
+	&.active{ border-bottom: 3px solid #0091ff;}
+	&:hover{ background: #eee; border-radius: 20px}
+}
+
+
+#subNav{
+	text-align: center;
+	width: 910px;
+	margin:0 auto;
+	a{
+		display: inline-block;
+		text-align: center;
+		width: 130px;
+		font-size: 14px;
+		color: #979797;
+		font-weight: 600;
+		&:hover{ background:#eee}
+	}
+	.icon{
+		display: block;
+		height: 47px;
+		width: 80px;
+		margin: 0 auto;
+		&.cat1{ background: url(assets/nav-cat-1.png) center no-repeat; background-size: 60px; }
+		&.cat2{ background: url(assets/nav-cat-2.png) center no-repeat; background-size:  50px }
+		&.cat3{ background: url(assets/nav-cat-3.png) center no-repeat; background-size:  39px }
+		&.cat4{ background: url(assets/nav-cat-4.png) center no-repeat; background-size:  50px }
+		&.cat5{ background: url(assets/nav-cat-5.png) center no-repeat; background-size:  60px }
+		&.cat6{ background: url(assets/nav-cat-6.png) center no-repeat; background-size:  60px }
+		&.cat7{ background: url(assets/nav-cat-7.png) center no-repeat; background-size:  50px; }
+	}
+}
+
+.thumb{
+	display: inline-block;
+	width: 68px;
+	height: 68px;
+	vertical-align: middle;
+	margin: 0 10px;
+	border-radius: 50%;
+	overflow: hidden;
+	img{
+		 max-width: 68px;
+	}
+	&.small{
+		width: 40px;
+		height: 40px;
+			img{max-width: 40px;}	
+	}
+	&.large{
+		width: 123px;
+		height: 130px;
+			img{max-width: 130px;}	
+	}
+}
+
+
+.features, .calendar{
+	border-bottom: 1px solid #979797;
+	padding: 2rem 0;
+}
+
+
+
+#categories, #instructors, #classes{
+	.card{
+		height: 186px;
+		padding: 80px 42px;
+		box-sizing: border-box;
+		background-repeat: no-repeat;
+		background-position: 105% bottom; 
+		border-radius: 6px;
+	}
+
+}
+
+.cat-name{
+	font-size: 18px;
+	text-transform: uppercase;
+}
+.date, .time{
+	font-size: 14px;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+#categories{
+	.card{
+		background-color:  #000000;
+		.cat-name{
+			color: rgba(255, 255, 255, 0.85);
+		}
+		&.cat-1{background-image: url(assets/cat-1.png);}
+		&.cat-2{background-image: url(assets/cat-2.png);}
+		&.cat-3{background-image: url(assets/cat-3.png);}
+		&.cat-4{background-image: url(assets/cat-4.png);}
+		&.cat-5{background-image: url(assets/cat-5.png);}
+		&.cat-6{background-image: url(assets/cat-6.png);}
+	}
+
+}
+
+#instructors{
+	.card{
+		border: solid 1px #979797;
+		padding-top: 50px;
+		.cat-name{
+			color: rgba(0, 0, 0, 0.85);
+		}
+		&.cat-7{background: url(assets/cat-7.png) no-repeat bottom right #fefefe;}
+		&.cat-8{background: url(assets/cat-8.png) no-repeat bottom right #f7f7f7;}
+		&.cat-9{background: url(assets/cat-9.png) no-repeat bottom right #f2f2f2;}
+	}
+}
+
+#classes{
+	.card{
+		color: white;
+		padding: 20px 42px;
+		border: none;
+		&.class-1{background: url(assets/class-1.png) no-repeat;}
+		&.class-2{background: url(assets/class-2.png) no-repeat;}
+		&.class-3{background: url(assets/class-3.png) no-repeat;}
+	}
+	.info{
+		font-weight: 600;
+		padding: 0;
+		margin-left:0;
+		font-size: 14px;
+		text-transform: uppercase;
+		li{list-style: none}
+
+	}
+	.startTime{
+		display: block; 
+		margin-left:35px;
+		font-weight: 600
+	}
+
+}
+
+
+
+.btn{
+	border-radius: 19px;
+	background-color: #fff;
+	font-size: 14px;
+	min-width: 150px;	
+	text-align: center;
+	padding: 10px 20px;
+	text-transform: uppercase;
+	font-weight: 600;
+	border: solid 0.5px #000000;
+	&:hover{background: #555; color: white;}
+	&.active{
+		background: #0091ff;
+		color: #fff;
+		border: solid 0.5px #0091ff;
+		&:hover{background-color: #0569b5;}
+	}
+	&.success{
+		background: #66b512;
+		color: #fff;
+		border: solid 0.5px  #66b512;
+		&:hover{ background-color: #4d9006;}
+
+	}
+	&.btn-lg{
+		font-size: 27px;
+		padding: 10px 50px;
+		border-radius: 26px;
+	}
+
+}
+
+.company-info{
+	padding:  10px 0;
+	background: url(assets/wheelchair-dancers.png) left center no-repeat;
+	background-size: 87px 87px;
+	li{
+		list-style: none;
+		color: #2a4560;
+		font-size:12px;
+		padding: 0;
+	}
+}
+
+.rounded-box{
+	background: #fff;
+	border-radius: 14px;
+	padding: 10px;
+}
+
+.modal-content{
+	border-radius: 15px;
+	padding: 30px;
+}
+
+#calendarSlider{
+	.item{
+		
+		text-transform: uppercase;
+		font-size: 15px;
+		font-weight: 900;
+		a{ 
+			display: inline-block;
+			padding: 10px 25px;
+			color: #5b6474;
+			text-align: center;
+			&:hover{
+			background-color: rgb(245, 247, 249); 
+			text-decoration: none; 
+			border-radius: 23px;}
+
+			&.active{
+				color:white;
+			 	border-radius: 23px;
+				background-color: #5b6474
+			}
+		}
+	}
+}
+
+
+
+.calendar{padding: 1em 0;}
+
+.slick-prev::before, .slick-next::before {
+
+    font-family: 'slick';
+    font-size: 24px;
+    line-height: 1;
+    opacity: .75;
+    color: transparent;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+
+}
+.slick-prev::before{
+	background: url(assets/prev.png) no-repeat center;
+	background-size: 12px 20px;
+}
+
+.slick-next::before{
+	background: url(assets/next.png) no-repeat center;
+	background-size: 12px 20px;
+}
+
+footer{
+	background: #101f2d;
+	padding: 15px 0;
+	*{color: #00b2ff;}
+	.footer-links{
+		padding: 0;
+		li{display: inline-block; margin-right: 10px}
+		a{ margin-right: 10px; font-size: 12px; color: #00b2ff;}
+	}
+	.copyright{font-size: 12px; color: #00b2ff; width: 400px}
+}
